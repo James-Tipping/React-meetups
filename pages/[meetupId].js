@@ -61,7 +61,7 @@ export async function getStaticProps(context) {
       props: {
         meetup: JSON.parse(JSON.stringify(meetupData))
       },
-      revalidate: 300
+      revalidate: 10
     };
   } catch (error) {
     console.log(error);
